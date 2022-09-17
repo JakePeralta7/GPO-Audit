@@ -1,6 +1,6 @@
 # Important Settings
 
-Here I'm going to list settings we should pay close attention to
+Here I'm going to list settings in the GPO we should pay close attention to.
 
 ## Computer Configuration
 ### Windows Settings
