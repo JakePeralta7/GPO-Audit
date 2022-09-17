@@ -29,3 +29,25 @@ For computers, Group Policy is applied when the computer starts. For users, Grou
 In addition to the initial processing of Group Policy when the computer starts and when the user logs on, the system periodically applies (refreshes) Group Policy in the background.
 
 By default, a refresh occurs every 90 minutes. The system may add a random time of up to 30 minutes to the refresh interval. You can change these default values by using a Group Policy setting in the Administrative Templates extension to Group Policy. Setting the value to zero minutes causes the refresh rate to be set to seven seconds.
+
+## View Effective Group Policy
+In a standard network, overtime understanding the GPO structure can become next to impossible (lots of gpo, lots of conflicting assignment)
+
+So, in order to check which GPO a specific combination of user and computer will get I wrote a PowerShell script (need to be run on computer with gpm mmc installed)
+```powershell
+# Constants
+$outputFile = “C:\TempGPOExport.html”
+$computerName = "COMPUTER-NAME.domain.local"
+$userName = "exapmle_user"
+
+$gpm = New-Object -ComObject GPMgmt.GPM
+$constants = $gpm.GetConstants()
+$gpmRSOP = $GPM.GetRSOP($Constants.RSOPModeLogging,$null,0)
+$gpmRSOP.LoggingComputer = $computerName
+$gpmRSOP.LoggingUser = $userName
+$gpmRSOP.LoggingFlags = $Constants.RsopLoggingNoUser
+$gpmRSOP.CreateQueryResults()
+
+# Exporting in HTML format
+$gpmRSOP.GenerateReportToFile($constants.ReportHTML,$outputfile)
+```
