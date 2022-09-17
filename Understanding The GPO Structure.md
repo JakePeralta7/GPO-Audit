@@ -33,7 +33,7 @@ By default, a refresh occurs every 90 minutes. The system may add a random time 
 ## View Effective Group Policy
 In a standard network, overtime understanding the GPO structure can become next to impossible (lots of gpo, lots of conflicting assignment)
 
-So, in order to check which GPO a specific combination of user and computer will get I wrote a PowerShell script (need to be run on computer with gpm mmc installed)
+So, in order to check which Effective GPO a specific combination of user and computer will get I wrote a PowerShell script (need to be run on computer with gpm mmc installed)
 ```powershell
 # Constants
 $outputFile = “C:\TempGPOExport.html”
