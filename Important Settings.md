@@ -27,3 +27,12 @@ Here I'm going to list settings in the GPO we should pay close attention to.
 
     Should be: Enabled
 ###### Removable Storage Access
+- All removable storage classes: Deny all accesses
+
+    Removable media drives are very prone to infection, and they may also contain a virus or malware. If a user plugs an infected drive to a network computer, it can affect the entire network. Similarly, DVDs, CDs and Floppy Drives are prone to infection.
+
+    Removable media drives can also bu used for data exfiltration.
+
+    It is therefore best to disable all these drives entirely.
+    
+    Should be: Enabled
