@@ -19,6 +19,13 @@ Here I'm going to list settings in the GPO we should pay close attention to.
 
     Should be: up to you
 
+###### Account Lockout Policy
+- Account lockout threshold
+
+    This security setting determines the number of failed logon attempts that causes a user account to be locked out. A locked-out account cannot be used until it is reset by an administrator or until the lockout duration for the account has expired. You can set a value between 0 and 999 failed logon attempts. If you set the value to 0, the account will never be locked out.
+
+    Should be: up to you
+
 ##### Local Policies
 ###### Security Options
 - Network security: Do not store LAN Manager hash value on next password change
