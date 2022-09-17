@@ -3,9 +3,11 @@
 The GPO is divided to two, User Configuration and Computer Configuration
 
 ## GPO Assignment
-A GPO can be associated (linked) to one or more Active Directory containers.
-Multiple containers can be linked to the same GPO, and a single container can have more than one GPO linked to it. 
-If multiple GPOs are linked to one container, you can prioritize the order in which GPOs are applied.
+- A GPO can be associated (linked) to one or more Active Directory containers.
+
+- Multiple containers can be linked to the same GPO, and a single container can have more than one GPO linked to it. 
+
+- If multiple GPOs are linked to one container, you can prioritize the order in which GPOs are applied.
 
 ## GPO Inheritence
 By default, Group Policy is inherited and cumulative, and it affects all computers and users in an Active Directory container.
