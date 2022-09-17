@@ -20,3 +20,12 @@ GPOs are processed in the following order:
 4. GPOs linked to organizational units are applied. For nested organizational units, GPOs linked to parent organizational units are applied before GPOs linked to child organizational units are applied.
 
 The last GPO to be applied is the first to try and solve a conflict (different explicit settings)
+
+## GPO Processing
+### Initial Processing
+For computers, Group Policy is applied when the computer starts. For users, Group Policy is applied at log on.
+
+### Background Refresh
+In addition to the initial processing of Group Policy when the computer starts and when the user logs on, the system periodically applies (refreshes) Group Policy in the background.
+
+By default, a refresh occurs every 90 minutes. The system may add a random time of up to 30 minutes to the refresh interval. You can change these default values by using a Group Policy setting in the Administrative Templates extension to Group Policy. Setting the value to zero minutes causes the refresh rate to be set to seven seconds.
