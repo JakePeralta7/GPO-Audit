@@ -5,6 +5,14 @@ Here I'm going to list settings in the GPO we should pay close attention to.
 ## Computer Configuration
 ### Windows Settings
 #### Security Settings
+##### Account Policies
+###### Password Policy
+- Minimum password length
+
+    Set the minimum password length to higher limits. For example, for elevated accounts, passwords should be set to at least 15 characters, and for regular accounts at least 12 characters. Setting a lower value for minimum password length creates unnecessary risk.
+
+    Should be: The length you choose
+
 ##### Local Policies
 ###### Security Options
 - Network security: Do not store LAN Manager hash value on next password change
@@ -35,6 +43,7 @@ Here I'm going to list settings in the GPO we should pay close attention to.
     After you have disabled Command Prompt and someone tries to open a command window, the system will display a message stating that some settings are preventing this action.
 
     Should be: Enabled
+
 ###### Removable Storage Access
 - All removable storage classes: Deny all accesses
 
