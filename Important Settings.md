@@ -14,6 +14,15 @@ Here I'm going to list settings in the GPO we should pay close attention to.
     The LM hash is weak and prone to hacking. Therefore, you should prevent Windows from storing an LM hash of your passwords.
 
     Should be: Enabled
+
+- Accounts: Guest Account Status
+
+    Through a Guest Account, users can get access to sensitive data. Such accounts grant access to a Windows computer and do not require a password. Enabling this account means anyone can misuse and abuse access to your systems.
+
+    Thankfully, these accounts are disabled by default. It’s best to check that this is the case in your IT environment as, if this account is enabled in your domain,  disabling it will prevent people from abusing access
+
+    Should be: Disabled
+
 ## User Configuration
 ### Policies
 #### Windows Settings
@@ -34,5 +43,5 @@ Here I'm going to list settings in the GPO we should pay close attention to.
     Removable media drives can also bu used for data exfiltration.
 
     It is therefore best to disable all these drives entirely.
-    
+
     Should be: Enabled
