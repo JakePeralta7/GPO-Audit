@@ -10,40 +10,40 @@ Here I'm going to list settings in the GPO we should pay close attention to.
 - Password Policy
     - Minimum password length
 
-    Set the minimum password length to higher limits. For example, for elevated accounts, passwords should be set to at least 15 characters, and for regular accounts at least 12 characters. Setting a lower value for minimum password length creates unnecessary risk.
+            Set the minimum password length to higher limits. For example, for elevated accounts, passwords should be set to at least 15 characters, and for regular accounts at least 12 characters. Setting a lower value for minimum password length creates unnecessary risk.
 
-    Should be: up to you
+        Should be: up to you
 
     - Maximum password age
 
-    If you set the password expiration age to a lengthy period of time, users will not have to change it very frequently, which means it’s more likely a password could get stolen. Shorter password expiration periods are always preferred.
+        If you set the password expiration age to a lengthy period of time, users will not have to change it very frequently, which means it’s more likely a password could get stolen. Shorter password expiration periods are always preferred.
 
-    Should be: up to you
+        Should be: up to you
 
-####### Account Lockout Policy
-- Account lockout threshold
+- Account Lockout Policy
+    - Account lockout threshold
 
-    This security setting determines the number of failed logon attempts that causes a user account to be locked out. A locked-out account cannot be used until it is reset by an administrator or until the lockout duration for the account has expired. You can set a value between 0 and 999 failed logon attempts. If you set the value to 0, the account will never be locked out.
+        This security setting determines the number of failed logon attempts that causes a user account to be locked out. A locked-out account cannot be used until it is reset by an administrator or until the lockout duration for the account has expired. You can set a value between 0 and 999 failed logon attempts. If you set the value to 0, the account will never be locked out.
 
-    Should be: up to you
+        Should be: up to you
 
 ###### Local Policies
-####### Security Options
-- Network security: Do not store LAN Manager hash value on next password change
+- Security Options
+    - Network security: Do not store LAN Manager hash value on next password change
 
-    Windows generates and stores user account passwords in “hashes.” Windows generates both a LAN Manager hash (LM hash) and a Windows NT hash (NT hash) of passwords. It stores them in the local Security Accounts Manager (SAM) database or Active Directory.
+        Windows generates and stores user account passwords in “hashes.” Windows generates both a LAN Manager hash (LM hash) and a Windows NT hash (NT hash) of passwords. It stores them in the local Security Accounts Manager (SAM) database or Active Directory.
 
-    The LM hash is weak and prone to hacking. Therefore, you should prevent Windows from storing an LM hash of your passwords.
+        The LM hash is weak and prone to hacking. Therefore, you should prevent Windows from storing an LM hash of your passwords.
 
-    Should be: Enabled
+        Should be: Enabled
 
-- Accounts: Guest Account Status
+    - Accounts: Guest Account Status
 
-    Through a Guest Account, users can get access to sensitive data. Such accounts grant access to a Windows computer and do not require a password. Enabling this account means anyone can misuse and abuse access to your systems.
+        Through a Guest Account, users can get access to sensitive data. Such accounts grant access to a Windows computer and do not require a password. Enabling this account means anyone can misuse and abuse access to your systems.
 
-    Thankfully, these accounts are disabled by default. It’s best to check that this is the case in your IT environment as, if this account is enabled in your domain,  disabling it will prevent people from abusing access
+        Thankfully, these accounts are disabled by default. It’s best to check that this is the case in your IT environment as, if this account is enabled in your domain,  disabling it will prevent people from abusing access
 
-    Should be: Disabled
+        Should be: Disabled
 
 ## User Configuration
 ### Policies
