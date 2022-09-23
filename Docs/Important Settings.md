@@ -7,14 +7,14 @@ Here I'm going to list settings in the GPO we should pay close attention to.
 #### Windows Settings
 ##### Security Settings
 ###### Account Policies
-####### Password Policy
-- Minimum password length
+- Password Policy
+    - Minimum password length
 
     Set the minimum password length to higher limits. For example, for elevated accounts, passwords should be set to at least 15 characters, and for regular accounts at least 12 characters. Setting a lower value for minimum password length creates unnecessary risk.
 
     Should be: up to you
 
-- Maximum password age
+    - Maximum password age
 
     If you set the password expiration age to a lengthy period of time, users will not have to change it very frequently, which means it’s more likely a password could get stolen. Shorter password expiration periods are always preferred.
 
