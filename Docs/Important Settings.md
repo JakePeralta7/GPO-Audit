@@ -10,7 +10,7 @@ Here I'm going to list settings in the GPO we should pay close attention to.
 - Password Policy
     - Minimum password length
 
-            Set the minimum password length to higher limits. For example, for elevated accounts, passwords should be set to at least 15 characters, and for regular accounts at least 12 characters. Setting a lower value for minimum password length creates unnecessary risk.
+        Set the minimum password length to higher limits. For example, for elevated accounts, passwords should be set to at least 15 characters, and for regular accounts at least 12 characters. Setting a lower value for minimum password length creates unnecessary risk.
 
         Should be: up to you
 
