@@ -15,3 +15,5 @@ he following screenshot shows Policy Analyzer’s Excel output. Policy Analyzer 
 ![Policy Analyzer Excel](/Img/119321i3E69AD9EA5121875.png "Title")
 
 Policy Analyzer is a lightweight standalone application that doesn’t require installation, and doesn’t require administrative rights (except for the “local policy” feature).
+
+You can download the tool from [here](/Resources/PolicyAnalyzer.zip)
