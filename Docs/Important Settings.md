@@ -45,10 +45,15 @@ Here I'm going to list settings in the GPO we should pay close attention to.
 
         Should be: Disabled
 
-### Preferences
-#### Control Panel Settings
-##### Local Users and Groups
-In this section we can define the local users and groups and their premmissions 
+###### Restricted Groups
+In every organization there will always be the need to have administrators of some sort manage some number of the machines in the domain. We also want to follow the path of least privilege, so using your Domain Admin (DA) account to do your daily admin tasks is not going to cut it. Remember, DA accounts should only be used for tasks that require such privileges, tasks such as Finding Lockout Sources in Active Directory. A Domain Admin should not be used for logging into a random workstation or server to perform certain tasks. For this reason, we need the ability to add local administrators via GPO and separate privileges for admin accounts.
+
+Best Practices is an admin that has a DA account should have the following accounts with privileges.
+
+- Domain Admin: Used for very limited tasks that actually require DA access.
+- Server Admin: Used for logging into servers. This account is NOT a Domain Admin and is not an admin on any workstations.
+- Workstation Admin: Used for administering end user workstations. This account is NOT a Domain Admin and is not an admin on any Servers.
+- Regular Account: Account used for email and general day to day tasks. This account is not an admin on any servers or any end user workstations.
 
 ## User Configuration
 ### Policies
