@@ -9,3 +9,4 @@ In this repository I'm going to document the process of a GPO Audit I'm conducti
 - [What is RSoP? Plus How to Check Group Policy – Step-by-step Guide](https://www.comparitech.com/net-admin/rsop-and-how-to-check-group-policy/)
 - [New tool: Policy Analyzer](https://techcommunity.microsoft.com/t5/microsoft-security-baselines/new-tool-policy-analyzer/ba-p/701049)
 - [Credential Dumping: Group Policy Preferences (GPP)](https://www.hackingarticles.in/credential-dumping-group-policy-preferences-gpp/)
+- [A Red Teamer’s Guide to GPOs and OUs](https://wald0.com/?p=179)
