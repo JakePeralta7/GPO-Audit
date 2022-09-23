@@ -3,10 +3,11 @@
 Here I'm going to list settings in the GPO we should pay close attention to.
 
 ## Computer Configuration
-### Windows Settings
-#### Security Settings
-##### Account Policies
-###### Password Policy
+### Policies
+#### Windows Settings
+##### Security Settings
+###### Account Policies
+####### Password Policy
 - Minimum password length
 
     Set the minimum password length to higher limits. For example, for elevated accounts, passwords should be set to at least 15 characters, and for regular accounts at least 12 characters. Setting a lower value for minimum password length creates unnecessary risk.
@@ -19,15 +20,15 @@ Here I'm going to list settings in the GPO we should pay close attention to.
 
     Should be: up to you
 
-###### Account Lockout Policy
+####### Account Lockout Policy
 - Account lockout threshold
 
     This security setting determines the number of failed logon attempts that causes a user account to be locked out. A locked-out account cannot be used until it is reset by an administrator or until the lockout duration for the account has expired. You can set a value between 0 and 999 failed logon attempts. If you set the value to 0, the account will never be locked out.
 
     Should be: up to you
 
-##### Local Policies
-###### Security Options
+###### Local Policies
+####### Security Options
 - Network security: Do not store LAN Manager hash value on next password change
 
     Windows generates and stores user account passwords in “hashes.” Windows generates both a LAN Manager hash (LM hash) and a Windows NT hash (NT hash) of passwords. It stores them in the local Security Accounts Manager (SAM) database or Active Directory.
