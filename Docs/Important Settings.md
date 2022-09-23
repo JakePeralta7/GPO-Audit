@@ -45,6 +45,11 @@ Here I'm going to list settings in the GPO we should pay close attention to.
 
         Should be: Disabled
 
+### Preferences
+#### Control Panel Settings
+##### Local Users and Groups
+In this section we can define the local users and groups and their premmissions 
+
 ## User Configuration
 ### Policies
 #### Windows Settings
